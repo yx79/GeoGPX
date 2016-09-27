@@ -1,0 +1,12 @@
+
+/* Class = "UIBarButtonItem"; title = "Check "; ObjectID = "6jE-f1-Zts"; */
+"6jE-f1-Zts.title" = "检测";
+
+/* Class = "UILabel"; text = "Latitude"; ObjectID = "MyG-QM-k1F"; */
+"MyG-QM-k1F.text" = "纬度";
+
+/* Class = "UILabel"; text = "Longitude"; ObjectID = "iPv-tt-8xl"; */
+"iPv-tt-8xl.text" = "经度";
+
+/* Class = "UILabel"; text = "Activate"; ObjectID = "nRf-gc-ooi"; */
+"nRf-gc-ooi.text" = "激活";

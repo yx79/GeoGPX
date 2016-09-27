@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" translatesAutoresizingMaskIntoConstraints="NO" id="Mkk-tT-Lep">
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dYb-Qx-6G9"/>
+                                </connections>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCK-RR-His">
+                                <items>
+                                    <barButtonItem style="plain" id="Ds1-6a-GM9">
+                                        <view key="customView" contentMode="scaleToFill" id="eUu-5k-EzA">
+                                            <rect key="frame" x="16" y="6" width="136" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RCK-AH-xhq">
+                                                    <frame key="frameInset" minX="85" minY="1" width="51" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="switchClicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="3bn-cg-1PB"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRf-gc-ooi">
+                                                    <frame key="frameInset" minX="8" minY="5" width="62" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                    </barButtonItem>
+                                    <barButtonItem title="Check " style="plain" id="6jE-f1-Zts">
+                                        <connections>
+                                            <action selector="checkStatusClicked:" destination="BYZ-38-t0r" id="ATu-xd-FwX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="RM6-By-0h5"/>
+                                    <barButtonItem style="plain" id="ASg-8H-94a">
+                                        <view key="customView" contentMode="scaleToFill" id="dqB-h5-uln">
+                                            <rect key="frame" x="206" y="6" width="83" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyG-QM-k1F" userLabel="latitudeLabel">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="MyG-QM-k1F" firstAttribute="centerY" secondItem="dqB-h5-uln" secondAttribute="centerY" id="GRO-3b-OP5"/>
+                                                <constraint firstItem="MyG-QM-k1F" firstAttribute="centerX" secondItem="dqB-h5-uln" secondAttribute="centerX" id="uEJ-HR-GNF"/>
+                                            </constraints>
+                                        </view>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2Hq-4G-Foz"/>
+                                    <barButtonItem style="plain" id="fNk-5S-scs">
+                                        <view key="customView" contentMode="scaleToFill" id="KNn-oE-7kq">
+                                            <rect key="frame" x="299" y="6" width="68" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPv-tt-8xl" userLabel="longitudeLabel">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="iPv-tt-8xl" firstAttribute="centerX" secondItem="KNn-oE-7kq" secondAttribute="centerX" id="dRQ-NX-CcH"/>
+                                                <constraint firstItem="iPv-tt-8xl" firstAttribute="centerY" secondItem="KNn-oE-7kq" secondAttribute="centerY" id="tsO-0u-43a"/>
+                                            </constraints>
+                                        </view>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mkk-tT-Lep" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="1hu-23-NHf"/>
+                            <constraint firstItem="ZCK-RR-His" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="4Ee-dC-FoS"/>
+                            <constraint firstItem="Mkk-tT-Lep" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="IU7-DL-5p3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mkk-tT-Lep" secondAttribute="trailing" constant="-20" id="MOZ-hg-NzH"/>
+                            <constraint firstItem="ZCK-RR-His" firstAttribute="top" secondItem="Mkk-tT-Lep" secondAttribute="bottom" id="QoM-Lo-Qb4"/>
+                            <constraint firstItem="Mkk-tT-Lep" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="WuO-uM-Wog"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mkk-tT-Lep" secondAttribute="trailing" constant="-20" id="eeK-sv-SuB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZCK-RR-His" secondAttribute="bottom" id="gdH-zJ-t6g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZCK-RR-His" secondAttribute="trailing" constant="-20" id="mcU-sG-fuj"/>
+                            <constraint firstItem="Mkk-tT-Lep" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="qW2-oF-yve"/>
+                            <constraint firstItem="ZCK-RR-His" firstAttribute="top" secondItem="Mkk-tT-Lep" secondAttribute="bottom" id="s3I-70-q7o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="checkStatusButton" destination="6jE-f1-Zts" id="Y08-jl-Yd7"/>
+                        <outlet property="latitudeText" destination="MyG-QM-k1F" id="w8p-sU-Dby"/>
+                        <outlet property="longitudeText" destination="iPv-tt-8xl" id="Mrv-tp-1tU"/>
+                        <outlet property="mapView" destination="Mkk-tT-Lep" id="UP0-Qs-BzU"/>
+                        <outlet property="switchActivate" destination="RCK-AH-xhq" id="68p-dQ-2bf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="376.875" y="338.75"/>
+        </scene>
+    </scenes>
+</document>

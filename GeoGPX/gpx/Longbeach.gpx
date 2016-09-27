@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx
+    xmlns="http://www.topografix.com/GPX/1/1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+    version="1.1"
+    creator="gpx-poi.com">
+    
+    <wpt lat="33.762122" lon="-118.197060">
+        <time>2016-06-29T00:00:00</time>
+    </wpt>
+    
+    <wpt lat="33.762639" lon="-118.195861">
+        <time>2016-06-29T00:01:00</time>
+    </wpt>
+    
+    <wpt lat="33.761703" lon="-118.196476">
+        <time>2016-06-29T00:02:30</time>
+    </wpt>
+    
+    
+    <wpt lat="33.760860" lon="-118.196357">
+        <time>2016-06-29T00:03:00</time>
+    </wpt>
+    
+    <wpt lat="33.760525" lon="-118.193976">
+        <time>2016-06-29T00:03:30</time>
+    </wpt>
+    
+    <wpt lat="33.759227" lon="-118.193514">
+        <time>2016-06-29T00:04:00</time>
+    </wpt>
+    
+    <wpt lat="33.761667" lon="-118.192914">
+        <time>2016-06-29T00:05:00</time>
+    </wpt>
+    
+    <wpt lat="33.762933" lon="-118.194909">
+        <time>2016-06-29T00:06:00</time>
+    </wpt>
+    
+    <wpt lat="33.762166" lon="-118.197087">
+        <time>2016-06-29T00:07:30</time>
+    </wpt>
+    
+    
+</gpx>
