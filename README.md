@@ -6,5 +6,5 @@ Screenshots:
 ![Alt text](https://s3-us-west-2.amazonaws.com/yuanjiexie/spring2016/iOS/GeoGPX/geogpx-1.png "GeoGPX")
 
 
-![Alt text](https://s3-us-west-2.amazonaws.com/yuanjiexie/spring2016/iOS/GeoGPX/geogpx.gif "GeoGPX")
 
+![](https://s3-us-west-2.amazonaws.com/yuanjiexie/iOS/geogpx-1.gif)
