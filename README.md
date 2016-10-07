@@ -1,6 +1,8 @@
 # GeoGPX
 This app allows you to simulate your GPS via modifying gpx files in Xcode, and you can read your longitude and lattidue of your simulated location.
 
+Traveling around the world in GeoGPX!
+
 
 Screen Preview:
 
